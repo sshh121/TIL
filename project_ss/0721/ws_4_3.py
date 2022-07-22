@@ -1,25 +1,13 @@
 ####미완 ㅠ
-numbers = input()
+
+def remove_num(list):
+    pass
+    #return
+    for idx, num in enumerate(list):
+        if list[idx+1] == num:
+            list.pop(idx+1)  #pop은 인덱스로 값 삭제 후 삭제한 값 반환
+    return list
 
 
-#[1,1,3,3,0,1,1]
-
-
-
-'''
-len_num = len(numbers)
-for num in range(len_num-1):
-    if numbers[num] == numbers[num+1] :
-        numbers.pop(num+1)
-        len_num -=1
-        
-print(numbers)
-
-
-for i, num in enumerate(numbers):
-    print(i, num)
-    # if numbers[i]
-print(numbers)
-
-
-'''
+numbers = [1,1,3,3,0,1,1]
+print(remove_num(numbers))
