@@ -10,7 +10,7 @@ def itoa(num): #int를 문자열로 바꾸는 함수
     result = ''
     while num:
         remainder = num % 10
-        result = chr(ord('0') + remainder) + result # 순서에 주의\
+        result = chr(ord('0') + remainder) + result # 순서에 주의
         num = num // 10
 
     if negative:
