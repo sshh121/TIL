@@ -1,10 +1,11 @@
 def find_set(x):
+    # 대표원소 찾는 것
     while x != rep[x]:
         x = rep[x]
     return x
 
 def union(x, y):
-    # 대표원소 변경
+    # 대표원소 변경 (집합을 합하고..)
     rep[find_set(y)] = find_set(x)
 
 
